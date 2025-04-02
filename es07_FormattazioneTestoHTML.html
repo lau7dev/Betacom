@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            let strTesto = "Cavolini di Bruxelles (-25%); Fagiolini della Nonna (-50%); Kit Kat Fondente (-15%);";
+            let prodotti = strTesto.split(";");
+
+            prodotti.forEach(prodotti => {
+                document.write(prodotti.trim());
+            });
+        </script>
+</html>
