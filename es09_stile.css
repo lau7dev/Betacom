@@ -1,0 +1,23 @@
+h1 {
+    color:blue;
+    text-align: center;
+}
+
+p {
+    color: red;
+    text-align: center;
+}
+
+.bordo {
+    border: 2px solid green;
+    display: inline-block;
+}
+
+.contorno {
+    border: double blue;
+    display: inline-block;
+}
+
+.sconto {
+    color: rgb(155, 0, 0);
+}
