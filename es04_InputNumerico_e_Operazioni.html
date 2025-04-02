@@ -6,7 +6,7 @@
             let Input2 = prompt("Inserisci il secondo numero:");
             let Moltiplicazione = Input1 * Input2;
             let Divisione = Input1 / Input2;
-            let Somma = Input1 + Input2;
+            let Somma = parseFloat(Input1) + parseFloat(Input2); // parseFloat() converte la stringa in un numero decimale
             let Sottrazione = Input1 - Input2;
 
             console.log("La moltiplicazione tra " + Input1 + " e " + Input2 + ", è uguale a " + Moltiplicazione);
