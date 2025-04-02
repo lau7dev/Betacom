@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            let Input1 = prompt("Inserisci il primo numero:");
+            let Input2 = prompt("Inserisci il secondo numero:");
+            let Operazione = prompt("Scegli l'operazione da eseguire: +, -, *, /");
+            let Risultato;
+            let NomeOperazione;
+
+            switch (Operazione) {
+                case "+":
+                    Risultato = parseFloat(Input1) + parseFloat(Input2);
+                    NomeOperazione = "somma";
+                    break;
+                case "-":
+                    Risultato = Input1 - Input2;
+                    NomeOperazione = "sottrazione";
+                    break;
+                case "*":
+                    Risultato = Input1 * Input2;
+                    NomeOperazione = "moltiplicazione";
+                    break;
+                case "/":
+                    Risultato = Input1 / Input2;
+                    NomeOperazione = "divisione";
+                    break;
+                default:
+                    console.log("Operazione non valida");
+            }
+
+            console.log("Il risultato dell'operazione " + NomeOperazione + " tra " + Input1 + " e " + Input2 + " è: " + Risultato);
+        </script>
+    </body>
