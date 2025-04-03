@@ -1,0 +1,29 @@
+label {
+    color: black;
+}
+
+h1 {
+    color:blue;
+    text-align: center;
+}
+
+.sconto {
+    color: red;
+    text-align: center;
+}
+
+p {
+    color: rgb(145, 0, 0);
+    text-align: center;
+}
+
+.bordo {
+    border: 2px solid green;
+    display: inline-block;
+    text-align: left;
+}
+
+.contorno {
+    border: double blue;
+    display: inline-block;
+}

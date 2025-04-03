@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="es14_stile.css">
+</head>
+    <body> <div class = "contorno">
+        <h1>NON LASCIATEVI SCAPPARE L'OFFERTA DEL MESE</h1>
+            <p><span class = "bordo">
+                <strong>
+                    Cavolini di Bruxelles 1,50€<span class = "sconto"> Sconto (-25%)</span> 
+                    <input type ="checkbox" id = "Opzione1" name = "Scelta1" value = "Cavolini di Bruxelles">
+                    <label for ="Scelta1">Acquista</label><br>
+
+                    Fagiolini della nonna 456€<span class = "sconto"> Sconto (-50%)</span>
+                    <input type = "checkbox" id = "Opzione2" name = "Scelta2" value = "Fagiolini della nonna">
+                    <label for ="Scelta2">Acquista</label><br>
+
+                    Kit kat fondente 3,50€<span class = "sconto"> Sconto (-15%)</span>
+                    <input type = "checkbox" id = "Opzione3" name = "Scelta3" value = "Kit kat fondente">
+                    <label for ="Scelta3">Acquista</label><br>
+                </strong>
+
+                <button type = "button" onclick = "mostraScelte()">Visualizza Articoli Selezionati</button>
+                <button type = "button" onclick="creaOrdine()" id = "ordine">Crea Ordine</button>
+        </span></p>
+    </div>
+    <script>
+        function mostraScelte() {
+            let articoli = [];
+            let checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+            for (let i = 0; i < checkboxes.length; i++) {
+                articoli.push(checkboxes[i].value);
+            }
+            if (articoli.length > 0) {
+                alert("Hai selezionato: " + articoli.join("--- "));
+            } else {
+                alert("Nessun articolo.");
+            }
+        }
+
+        function creaOrdine() {
+            let checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+            if(checkboxes.length == 0) {
+                document.getElementById("ordine").disabled = true;
+            } else {
+                window.location.href = "testpage2.html";
+            }
+        }
+    </script>
+</body>
+</html>
