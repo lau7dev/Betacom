@@ -5,17 +5,24 @@ using namespace std;
 
 int main() {
     float numero1, numero2, risultato;
-    int scelta;
+    string scelta;
     
     cout << "---|| CALCOLATRICE INTERATTIVA ||---\n";
     cout << "1. Somma\n";
     cout << "2. Sottrazione\n";
     cout << "3. Moltiplicazione\n";
     cout << "4. Divisione\n";
-    cout << "Scegli l'operazione (1-4): ";
+    cout << "Scegli l'operazione (1-4) o Premere il tasto F per chiudere il programma: ";
     cin >> scelta;
+    
+    if (scelta == "F" || scelta == "f") {
+        cout << "Uscita dal programma.\n";
+        return 0;
+    }
 
-    switch(scelta) {
+    int scelta_numero = stoi(scelta);
+
+    switch(scelta_numero) {
         case 1:
             cout << "Inserisci il primo numero: ";
             cin >> numero1;
